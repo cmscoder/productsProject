@@ -91,22 +91,17 @@ The project follows a modular and scalable structure, primarily leveraging Next.
 ```
 
 
-
-
 ## ✨ Best Practices & Design Principles
 
-- **Next.js `Image` Component**: Always use this component for optimized image delivery. 🖼️
-- **Accessibility First**: Prioritize semantic HTML and provide meaningful `alt` text for all images to ensure an inclusive user experience. ♿
-- **Robust Testing**: Maintain high code quality and prevent regressions with comprehensive unit, integration, and accessibility tests. ✅
-- **SCSS Modules**: Utilize CSS Modules with SCSS for component-scoped styles, preventing global style conflicts. 💅
-- **Separation of Concerns**: Keep business logic (state management, data fetching) in custom hooks or context providers, separate from presentational UI components. 🏗️
-- **Code Consistency**: Enforce consistent code style and formatting using ESLint and Prettier. ✨
-- **Error Handling**: Implement robust error handling for API calls and component rendering (e.g., `notFound()` for missing products). 🛑
-- **Responsive Design**: Components are built with mobile-first and responsiveness in mind. 📱💻
+* **Next.js `Image` Component**: Always use this component for optimized image delivery. 🖼️
+* **Accessibility First**: Prioritize semantic HTML and provide meaningful `alt` text for all images to ensure an inclusive user experience. ♿
+* **Robust Testing**: Maintain high code quality and prevent regressions with comprehensive unit, integration, and accessibility tests. ✅
+* **SCSS Modules**: Utilize CSS Modules with SCSS for component-scoped styles, preventing global style conflicts. 💅
+* **Separation of Concerns**: Keep business logic (state management, data fetching) in custom hooks or context providers, separate from presentational UI components. 🏗️
+* **Code Consistency**: Enforce consistent code style and formatting using ESLint and Prettier. ✨
+* **Error Handling**: Implement robust error handling for API calls and component rendering (e.g., `notFound()` for missing products). 🛑
+* **Responsive Design**: Components are built with mobile-first and responsiveness in mind. 📱💻
 
 ---
 
-## 🚀 Deployment
-
-This Next.js application is designed for easy deployment. It can be deployed on platforms like **Vercel** (the creators of Next.js) or any other platform that supports Node.js applications and static site generation (if applicable). ☁️
 ````
