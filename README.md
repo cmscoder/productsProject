@@ -65,7 +65,7 @@ A list of useful commands for development and maintenance.
 
 The project follows a modular and scalable structure, primarily leveraging Next.js's App Router conventions:
 
-````<-- Make sure these three backticks are on their own line with NO other characters or spaces.
+````
 .
 ├── __mocks__/              # 🎭 Jest mocks for files and modules
 ├── __tests__/              # 🧪 Global test setup or common test utilities
@@ -88,7 +88,10 @@ The project follows a modular and scalable structure, primarily leveraging Next.
 ├── jest.config.js          # 🚀 Jest test configuration
 ├── tsconfig.json           # ✍️ TypeScript configuration
 └── package.json            # 📄 Project dependencies and scripts
-```  <-- Make sure these three backticks are on their own line with NO other characters or spaces.
+```
+
+
+
 
 ## ✨ Best Practices & Design Principles
 
