@@ -65,8 +65,9 @@ A list of useful commands for development and maintenance.
 
 The project follows a modular and scalable structure, primarily leveraging Next.js's App Router conventions:
 
-├── **mocks**/ # 🎭 Jest mocks for files and modules
-├── **tests**/ # 🧪 Global test setup or common test utilities
+.
+├── mocks/ # 🎭 Jest mocks for files and modules
+├── tests/ # 🧪 Global test setup or common test utilities
 ├── public/ # 🖼️ Static assets
 ├── src/
 │ ├── app/ # 🌐 Next.js App Router (pages, layouts, API routes)
