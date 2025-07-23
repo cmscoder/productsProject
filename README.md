@@ -37,7 +37,7 @@ Before you begin, ensure you have the following installed:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/your-repo-name.git
+    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
     cd your-repo-name # Replace with your project folder name
     ```
 2.  **Install dependencies:**
@@ -55,4 +55,60 @@ To start the development server with hot-reloading:
 npm run dev
 # or
 yarn dev
+
+npm run lint   # Check code style and find issues
+npm run format # Format code with Prettier (if configured)
+
+npm test       # Run all unit and integration tests
+# or
+npx jest       # Directly run Jest if you prefer
+
+Command	Description
+npm run dev	Start development server
+npm run build	Build for production
+npm start	Start production server
+npm run lint	Run ESLint
+npm test	Run tests
+
+├── __mocks__/              # 🎭 Jest mocks for files and modules
+├── __tests__/              # 🧪 Global test setup or common test utilities
+├── public/                 # 🖼️ Static assets
+├── src/
+│   ├── app/                # 🌐 Next.js App Router (pages, layouts, API routes)
+│   │   ├── products/       # 🛍️ Dynamic routes for product details (e.g., /products/[id])
+│   │   └── layout.tsx      # 📐 Root layout for the application
+│   ├── components/         # 🧩 Reusable React components
+│   │   ├── cart/           # 🛒 Components related to the shopping cart
+│   │   ├── header/         # 🔝 Header component
+│   │   └── carousel/       # 🎠 Carousel component with custom scrollbar
+│   ├── context/            # 📦 React Context APIs for global state (e.g., CartContext)
+│   ├── hooks/              # 🎣 Custom React hooks
+│   ├── styles/             # 🎨 Global SCSS variables, mixins, and base styles
+│   ├── utils/              # 🔧 Utility functions (e.g., API calls, helpers)
+│   └── types/              # 📝 TypeScript custom type definitions
+├── .eslintrc.json          # 📏 ESLint configuration
+├── .prettierrc             # 🌟 Prettier configuration
+├── jest.config.js          # 🚀 Jest test configuration
+├── tsconfig.json           # ✍️ TypeScript configuration
+└── package.json            # 📄 Project dependencies and scripts
+
+✨ Best Practices & Design Principles
+Next.js Image Component: Always use this component for optimized image delivery. 🖼️
+
+Accessibility First: Prioritize semantic HTML and provide meaningful alt text for all images to ensure an inclusive user experience. ♿
+
+Robust Testing: Maintain high code quality and prevent regressions with comprehensive unit, integration, and accessibility tests. ✅
+
+SCSS Modules: Utilize CSS Modules with SCSS for component-scoped styles, preventing global style conflicts. 💅
+
+Separation of Concerns: Keep business logic (state management, data fetching) in custom hooks or context providers, separate from presentational UI components. 🏗️
+
+Code Consistency: Enforce consistent code style and formatting using ESLint and Prettier. ✨
+
+Error Handling: Implement robust error handling for API calls and component rendering (e.g., notFound() for missing products). 🛑
+
+Responsive Design: Components are built with mobile-first and responsiveness in mind. 📱💻
+
+🚀 Deployment
+This Next.js application is designed for easy deployment. It can be deployed on platforms like Vercel (the creators of Next.js) or any other platform that supports Node.js applications and static site generation (if applicable). ☁️
 ```
