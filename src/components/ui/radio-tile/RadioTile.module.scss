@@ -1,0 +1,56 @@
+.radioTile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  width: 95px;
+  height: 65px;
+  border: 1px solid #cccccc;
+  border-radius: 0;
+  background: #fff;
+  transition: border-color 0.2s;
+}
+
+.radioTile.colorTile {
+  width: 24px;
+  height: 24px;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+.radioTile.active {
+  border: 1px solid #000000;
+}
+
+.radioInput {
+  display: none;
+}
+
+.colorTile {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.2s;
+  padding: 2px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.colorTile.active {
+  border-color: #000000;
+}
+
+.colorInner {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  box-sizing: border-box;
+}

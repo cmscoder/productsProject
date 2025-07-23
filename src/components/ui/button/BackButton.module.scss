@@ -1,0 +1,35 @@
+.backButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: #222;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  padding: 0;
+}
+
+.backButton:hover {
+  background: #f3f3f3;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .backButton {
+    font-size: 0.95rem;
+    padding: 6px 8px;
+    gap: 6px;
+  }
+  .icon {
+    width: 18px;
+    height: 18px;
+  }
+}

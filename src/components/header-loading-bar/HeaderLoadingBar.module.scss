@@ -1,0 +1,15 @@
+.headerLoadingBar {
+  position: fixed;
+  top: 80px;
+  border-top: 0.5px solid #000000;
+  animation: headerLoadingGrow 0.35s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes headerLoadingGrow {
+  from {
+    width: 0vw;
+  }
+  to {
+    width: 100vw;
+  }
+}

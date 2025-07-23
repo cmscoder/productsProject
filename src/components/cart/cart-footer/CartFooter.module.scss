@@ -1,0 +1,156 @@
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 320px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.buttonRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 320px;
+  gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .totalRow {
+    margin-bottom: 0;
+    .footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      padding: 20px;
+      position: sticky;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #fff;
+      z-index: 100;
+    }
+    max-width: none;
+    width: auto;
+    font-weight: bold;
+  }
+  .buttonRow {
+    flex-direction: row;
+    justify-content: flex-end;
+    max-width: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 0;
+    gap: 10px;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0 56px 0;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.left {
+  display: flex;
+  align-items: center;
+
+  button {
+    width: 174px;
+    height: 48px;
+
+    @media (min-width: 768px) {
+      width: 200px;
+      margin-left: 56px;
+    }
+    @media (min-width: 1280px) {
+      width: 260px;
+      height: 56px;
+      margin-left: 80px;
+    }
+  }
+}
+
+.totalPrice {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+
+  @media (min-width: 768px) {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.right {
+  display: flex;
+  align-items: center;
+
+  button {
+    width: 100%;
+    height: 48px;
+
+    @media (min-width: 768px) {
+      width: 200px;
+    }
+    @media (min-width: 1280px) {
+      width: 260px;
+      height: 56px;
+    }
+  }
+}
+
+.totalLabel {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #222;
+}
+
+.totalValue {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-left: 8px;
+  color: #000;
+}
+
+.payButton {
+  margin-left: 24px;
+  padding: 10px 24px;
+  background: #df0000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.payButton:hover {
+  background: #b30000;
+}
+
+.continueButton {
+  padding: 10px 24px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.continueButton:hover {
+  background: #333;
+}

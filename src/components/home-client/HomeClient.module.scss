@@ -1,0 +1,121 @@
+@keyframes fromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animateFromRight > * {
+  animation: fromRight 2.2s cubic-bezier(0.22, 1, 0.36, 1);
+  opacity: 0;
+  transform: translateX(40px);
+  animation-fill-mode: forwards;
+}
+
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main {
+  padding-bottom: 100px;
+  padding-top: 240px;
+}
+
+.searchFixed {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  z-index: 900;
+  background: #ffffff;
+  min-height: 112px;
+}
+
+.searchArea {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 48px 0;
+}
+
+.resultsBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0;
+  width: 100%;
+  max-width: 1720px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 900px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (min-width: 1500px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.searchInputWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.searchInput {
+  border-bottom: 0.5px solid #000000;
+  background: #ffffff;
+  padding-bottom: 8px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding-right: 32px;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  color: #000000;
+  font-size: 16px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+.searchInput::placeholder {
+  font-size: 16px;
+  color: #aaaaaa;
+}
+
+.clearButton {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  height: 24px;
+  width: 24px;
+}

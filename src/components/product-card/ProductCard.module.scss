@@ -1,0 +1,97 @@
+.card {
+  position: relative;
+  overflow: hidden;
+  &:hover .productFooter,
+  &:focus-within .productFooter,
+  &:hover .productFooter *,
+  &:focus-within .productFooter * {
+    color: #fff !important;
+  }
+}
+
+.cardOverlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background: rgba(0, 0, 0, 0.7);
+  transition: height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.card:hover .cardOverlay,
+.card:focus-within .cardOverlay {
+  height: 100%;
+}
+
+.card {
+  background: #fff;
+  transition: background 0.3s;
+  z-index: 0;
+  width: auto;
+  height: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  border: 0.5px solid #000000;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background: #111;
+  transition: height 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.card:hover::after,
+.card:focus-within::after {
+  height: 100%;
+}
+
+.imageWrapper {
+  width: auto;
+  height: 257px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  align-self: stretch;
+  flex-grow: 1;
+  z-index: 1;
+}
+
+.image {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.productFooter {
+  display: flex;
+  margin-top: 24px;
+  justify-content: space-between;
+  position: relative;
+  z-index: 3;
+  transition: color 0.3s;
+}
+
+.productDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}

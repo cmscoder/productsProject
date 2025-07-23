@@ -1,0 +1,6 @@
+// ESLint script for package.json
+// Add this to your scripts section:
+"scripts": {
+  // ...existing scripts...
+  "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+}
