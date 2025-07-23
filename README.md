@@ -101,7 +101,4 @@ The project follows a modular and scalable structure, primarily leveraging Next.
 * **Code Consistency**: Enforce consistent code style and formatting using ESLint and Prettier. ✨
 * **Error Handling**: Implement robust error handling for API calls and component rendering (e.g., `notFound()` for missing products). 🛑
 * **Responsive Design**: Components are built with mobile-first and responsiveness in mind. 📱💻
-
----
-
 ````
