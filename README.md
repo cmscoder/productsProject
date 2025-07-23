@@ -65,27 +65,30 @@ A list of useful commands for development and maintenance.
 
 The project follows a modular and scalable structure, primarily leveraging Next.js's App Router conventions:
 
-├── **mocks**/ # 🎭 Jest mocks for files and modules
-├── **tests**/ # 🧪 Global test setup or common test utilities
-├── public/ # 🖼️ Static assets
+````<-- Make sure these three backticks are on their own line with NO other characters or spaces.
+.
+├── __mocks__/              # 🎭 Jest mocks for files and modules
+├── __tests__/              # 🧪 Global test setup or common test utilities
+├── public/                 # 🖼️ Static assets
 ├── src/
-│ ├── app/ # 🌐 Next.js App Router (pages, layouts, API routes)
-│ │ ├── products/ # 🛍️ Dynamic routes for product details (e.g., /products/[id])
-│ │ └── layout.tsx # 📐 Root layout for the application
-│ ├── components/ # 🧩 Reusable React components
-│ │ ├── cart/ # 🛒 Components related to the shopping cart
-│ │ ├── header/ # 🔝 Header component
-│ │ └── carousel/ # 🎠 Carousel component with custom scrollbar
-│ ├── context/ # 📦 React Context APIs for global state (e.g., CartContext)
-│ ├── hooks/ # 🎣 Custom React hooks
-│ ├── styles/ # 🎨 Global SCSS variables, mixins, and base styles
-│ ├── utils/ # 🔧 Utility functions (e.g., API calls, helpers)
-│ └── types/ # 📝 TypeScript custom type definitions
-├── .eslintrc.json # 📏 ESLint configuration
-├── .prettierrc # 🌟 Prettier configuration
-├── jest.config.js # 🚀 Jest test configuration
-├── tsconfig.json # ✍️ TypeScript configuration
-└── package.json # 📄 Project dependencies and scripts
+│   ├── app/                # 🌐 Next.js App Router (pages, layouts, API routes)
+│   │   ├── products/       # 🛍️ Dynamic routes for product details (e.g., /products/[id])
+│   │   └── layout.tsx      # 📐 Root layout for the application
+│   ├── components/         # 🧩 Reusable React components
+│   │   ├── cart/           # 🛒 Components related to the shopping cart
+│   │   ├── header/         # 🔝 Header component
+│   │   └── carousel/       # 🎠 Carousel component with custom scrollbar
+│   ├── context/            # 📦 React Context APIs for global state (e.g., CartContext)
+│   ├── hooks/              # 🎣 Custom React hooks
+│   ├── styles/             # 🎨 Global SCSS variables, mixins, and base styles
+│   ├── utils/              # 🔧 Utility functions (e.g., API calls, helpers)
+│   └── types/              # 📝 TypeScript custom type definitions
+├── .eslintrc.json          # 📏 ESLint configuration
+├── .prettierrc             # 🌟 Prettier configuration
+├── jest.config.js          # 🚀 Jest test configuration
+├── tsconfig.json           # ✍️ TypeScript configuration
+└── package.json            # 📄 Project dependencies and scripts
+```  <-- Make sure these three backticks are on their own line with NO other characters or spaces.
 
 ## ✨ Best Practices & Design Principles
 
@@ -103,3 +106,4 @@ The project follows a modular and scalable structure, primarily leveraging Next.
 ## 🚀 Deployment
 
 This Next.js application is designed for easy deployment. It can be deployed on platforms like **Vercel** (the creators of Next.js) or any other platform that supports Node.js applications and static site generation (if applicable). ☁️
+````
