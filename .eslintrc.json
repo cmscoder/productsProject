@@ -2,10 +2,10 @@
   "extends": ["next", "next/core-web-vitals", "plugin:prettier/recommended"],
   "plugins": ["prettier"],
   "rules": {
+    "endOfLine": "auto"
     "prettier/prettier": ["warn"],
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
-    "endOfLine": "auto"
   },
   "overrides": [
     {
